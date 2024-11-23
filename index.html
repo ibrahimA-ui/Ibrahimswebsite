@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+<title> wesbite</title> 
+    <style> 
+        ing { 
+            width: 680px; 
+            height: auto 
+        } 
+        h1{ 
+            color: red;
+        } 
+    </style> 
+    </head> 
+    <body> 
+<h1>wesite</h1> 
+<p>I think html is neat</p> 
+<<img src = "https://www.linearity.io/blog/content/images/2023/06/how-to-create-a-car-NewBlogCover.png" ]
+<blockquote>"When people say, “This is the language of my father,” </blockquote> 
+<button onclick="changeQuote">Change quote</button> 
+<script> 
+    var index = 0; 
+    function changeQuote(){ 
+        var quotes = [ 
+            `I really like web development! - me`, 
+            `I am enjoying my time at hackathon - me`, 
+            `basketball - me`, 
+            `When people say, “This is the language of my father,” ask them: “Are the worn-out shoes of your father still usable?” Every science is in need of new formulas. Likewise, the certain periods of life bring new expressions. One must rejoice at each new expression.` 
+        ]; 
+        var blockquote = document.querySelector("blockquote"); 
+        blockquote.innerHTML = quotes[index]; 
+    } 
+</script> 
+</body> 
+</html> 
